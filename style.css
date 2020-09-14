@@ -1,0 +1,104 @@
+* {
+  font-family: Poppins, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body .parallax {
+  height: auto;
+  width: 100%;
+  background-image: url(banner.png);
+  min-height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  background-size: cover;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  text-decoration: none;
+  padding-bottom: 10px;
+  padding-left: 75px;
+  padding-right: 75px;
+  transition: 0.1s linear;
+  transition-delay: 0.1s;
+}
+
+nav a:hover {
+  border-bottom: 5px solid rgb(23, 151, 6);
+}
+
+nav li {
+  list-style: none;
+}
+
+#about {
+  padding: 3em;
+}
+
+#about p {
+  line-height: 1.8em;
+  max-width: 50ch;
+}
+
+@media only screen and (max-device-width: 1300px) {
+  .parallax {
+    background-attachment: scroll;
+    background-size: contain;
+  }
+}
+
+iframe {
+  margin: 10px;
+}
+
+#videos {
+  text-align: center;
+}
+
+.welcome {
+  font-size: 3em;
+  padding-bottom: 10px;
+  border-bottom: 5px solid rgb(23, 151, 6);
+  margin-left: 6em;
+  margin-right: 6em;
+  text-align: center;
+}
+
+#team .members {
+  text-align: center;
+}
+
+p {
+  font-size: larger;
+}
+
+section {
+  margin: 1em 0em;
+}
+
+.story article {
+  font-size: 1.1em;
+  margin-left: 20px;
+  line-height: 1.9em;
+  padding: 10px;
+  margin: 1.6em;
+  max-width: 40ch;
+  width: auto;
+}
+
+.story article:nth-child(1) {
+  height: 200px;
+  float: left;
+}
